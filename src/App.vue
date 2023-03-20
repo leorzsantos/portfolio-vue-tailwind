@@ -1,27 +1,37 @@
 <script setup>
-import Box from './components/Box.vue';
-import Container from './components/Container.vue'
+import NavBar from './components/NavBar.vue';
+import About from './components/About.vue';
+import Home from './components/Home.vue';
 
-const list = [
-  { id: 1, title: "Tailwind CSS", promo: true },
-  { id: 2, title: "Tailwind CSS" },
-  { id: 3, title: "Tailwind CSS" },
-  { id: 4, title: "Tailwind CSS", promo: true },
-  { id: 5, title: "Tailwind CSS" },
-  { id: 6, title: "Tailwind CSS" },
-  { id: 7, title: "Tailwind CSS", promo: true },
-  { id: 8, title: "Tailwind CSS" },
-  { id: 9, title: "Tailwind CSS" },
-]
 
 </script>
 
 <template>
+  <NavBar></NavBar>
+  <section class="pt-32 pb-10 flex flex-col items-center justify-center">
 
-  <Container class="sm:p-8">
-    <Box v-for="item in list" :key="item.id" :promo="item.promo">{{ item.title }}</Box>
-  </Container>
+    <Home></Home>
 
+  </section>
+
+  <div class="flex items-center justify-center">
+    <hr class="my-8 border-title-color opacity-75 w-4/6">
+  </div>
+
+  <section class="py-10 flex flex-col items-center justify-center">
+
+    <About></About>
+
+  </section>
+
+  <div class="flex items-center justify-center">
+    <hr class="my-8 border-title-color opacity-75 w-4/6">
+  </div>
+  
 </template>
 
-<style scoped></style>
+<style>
+body {
+  @apply bg-first-color;
+}
+</style>
