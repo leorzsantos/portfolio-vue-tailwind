@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex w-8/12">
+    <div class="flex sm:w-8/12">
         <div class="w-6/12 flex flex-col justify-evenly">
             <h1 class="font-extrabold text-2xl text-title-color">Prazer, Leonardo Rezende</h1>
             <span class="font-perso">Mas você pode me chamar de Leo</span>

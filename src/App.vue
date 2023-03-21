@@ -2,6 +2,8 @@
 import NavBar from './components/NavBar.vue';
 import About from './components/About.vue';
 import Home from './components/Home.vue';
+import Separetor from './components/Separetor.vue';
+import Blog from './components/Blog.vue';
 
 
 </script>
@@ -14,9 +16,7 @@ import Home from './components/Home.vue';
 
   </section>
 
-  <div class="flex items-center justify-center">
-    <hr class="my-8 border-title-color opacity-75 w-4/6">
-  </div>
+<Separetor></Separetor>
 
   <section class="py-10 flex flex-col items-center justify-center">
 
@@ -24,9 +24,15 @@ import Home from './components/Home.vue';
 
   </section>
 
-  <div class="flex items-center justify-center">
-    <hr class="my-8 border-title-color opacity-75 w-4/6">
-  </div>
+  <Separetor></Separetor>
+
+  <section class="py-10 flex flex-col items-center justify-center">
+
+    <Blog></Blog>
+
+  </section>
+
+  <Separetor></Separetor>
   
 </template>
 
